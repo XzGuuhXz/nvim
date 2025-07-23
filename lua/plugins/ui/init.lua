@@ -25,8 +25,8 @@ return {
       require('lualine').setup({
         options = {
           theme = 'tokyonight',
-          component_separators = { left = ' 󰇝 ', right = ' ' },
-          section_separators = { left = ' 󰊠', right = ' ' },
+          component_separators = { left = '', right = '' },
+          section_separators = { left = ' 󰊠', right = '' },
           globalstatus = true,
           refresh = {
             statusline = 1000,
@@ -48,7 +48,7 @@ return {
           lualine_b = {
             {
               'branch',
-              icon = ' 󰊢 ',
+              icon = '󰊢',
               color = { fg = colors.violet, gui = 'bold' },
             },
             {
