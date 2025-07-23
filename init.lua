@@ -87,29 +87,28 @@ vim.keymap.set("v", ">", ">gv", { desc = "Indent right" })
 vim.keymap.set("n", "n", "nzzzv", { desc = "Next search result" })
 vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous search result" })
 
--- Configurações de diagnósticos
+-- CONFIGURAÇÃO ÚNICA DE DIAGNÓSTICOS - Remove duplicação
 vim.diagnostic.config({
   virtual_text = {
     prefix = "●",
+    spacing = 4,
+    severity_sort = true,
   },
-  signs = true,
-  underline = true,
-  update_in_insert = false,
-  severity_sort = true,
-})
-
--- Símbolos de diagnóstico
-vim.diagnostic.config({
-  virtual_text = { prefix = "●" },
   signs = {
     text = {
-      [vim.diagnostic.severity.ERROR] = "",  -- Erro
-      [vim.diagnostic.severity.WARN]  = "",  -- Aviso
-      [vim.diagnostic.severity.HINT]  = "",  -- Dica
-      [vim.diagnostic.severity.INFO]  = "",  -- Informação
+      [vim.diagnostic.severity.ERROR] = "",
+      [vim.diagnostic.severity.WARN]  = "",
+      [vim.diagnostic.severity.HINT]  = "",
+      [vim.diagnostic.severity.INFO]  = "",
     }
   },
   underline = true,
   update_in_insert = false,
   severity_sort = true,
+  float = {
+    border = "rounded",
+    source = "always",
+    header = "",
+    prefix = "",
+  },
 })
