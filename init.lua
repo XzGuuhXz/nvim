@@ -1,5 +1,5 @@
 -- ========================================
--- NVIM-FUSION - Configuração Principal
+-- NVIM-FUSION - Configuração Principal CORRIGIDA
 -- ========================================
 
 vim.g.mapleader = " "
@@ -87,28 +87,35 @@ vim.keymap.set("v", ">", ">gv", { desc = "Indent right" })
 vim.keymap.set("n", "n", "nzzzv", { desc = "Next search result" })
 vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous search result" })
 
--- CONFIGURAÇÃO ÚNICA DE DIAGNÓSTICOS - Remove duplicação
-vim.diagnostic.config({
-  virtual_text = {
-    prefix = "●",
-    spacing = 4,
-    severity_sort = true,
-  },
-  signs = {
-    text = {
-      [vim.diagnostic.severity.ERROR] = "",
-      [vim.diagnostic.severity.WARN]  = "",
-      [vim.diagnostic.severity.HINT]  = "",
-      [vim.diagnostic.severity.INFO]  = "",
-    }
-  },
-  underline = true,
-  update_in_insert = false,
-  severity_sort = true,
-  float = {
-    border = "rounded",
-    source = "always",
-    header = "",
-    prefix = "",
-  },
+-- CONFIGURAÇÃO ÚNICA DE DIAGNÓSTICOS - Movida para após carregamento dos plugins
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    vim.diagnostic.config({
+      virtual_text = {
+        prefix = "●",
+        spacing = 4,
+        severity_sort = true,
+        source = "if_many",
+      },
+      signs = {
+        text = {
+          [vim.diagnostic.severity.ERROR] = "",
+          [vim.diagnostic.severity.WARN]  = "",
+          [vim.diagnostic.severity.HINT]  = "",
+          [vim.diagnostic.severity.INFO]  = "",
+        }
+      },
+      underline = true,
+      update_in_insert = false,
+      severity_sort = true,
+      float = {
+        border = "rounded",
+        source = "always",
+        header = "",
+        prefix = "",
+        focusable = false,
+        close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+      },
+    })
+  end,
 })
