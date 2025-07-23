@@ -1,4 +1,4 @@
-# NVIM-FUSION 🚀
+# NVIM 🚀
 
 Uma configuração moderna e completa do Neovim focada em produtividade e experiência visual.
 
