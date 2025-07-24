@@ -6,32 +6,83 @@ Uma configuração moderna e completa do Neovim focada em produtividade e experi
 ![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
 ![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
 
+## 📊 Informações da Versão
+
+| **Componente** | **Versão** | **Status** |
+|----------------|------------|------------|
+| **NVIM FUSION** | `v1.0.0` | ✅ Estável |
+| **Neovim** | `>= 0.9.0` | ✅ Requerido |
+| **Lua** | `5.1+` | ✅ Integrado |
+| **Lazy.nvim** | `Latest` | 🔄 Auto-update |
+| **LSP Servers** | `Variável` | 🔄 Gerenciado pelo Mason |
+
+### 🔄 Histórico de Versões
+
+- **v1.0.0** (Atual)
+  - ✨ Adicionado suporte completo ao TypeScript
+  - 🔧 Melhorias na configuração do LSP
+  - 🎨 Interface Lualine redesenhada
+  - 🐛 Correções de bugs menores
+  - 🚀 Migração completa para Lazy.nvim
+  - 📦 Reorganização da estrutura de plugins
+  - ⚡ Melhorias significativas de performance
+  - 🔒 Sistema de diagnósticos unificado
+  - 🌳 Integração completa com Treesitter
+  - 🎯 Sistema de snippets aprimorado
+  - 📝 Documentação expandida
+
+### 📦 Compatibilidade
+
+| **Sistema** | **Status** | **Notas** |
+|-------------|------------|-----------|
+| **Linux** | ✅ Totalmente suportado | Testado em Ubuntu, Arch, Fedora |
+| **macOS** | ✅ Totalmente suportado | Homebrew recomendado |
+| **Windows** | ⚠️ Parcialmente suportado | WSL2 recomendado |
+| **Termux** | 🔶 Experimental | Algumas limitações |
+
+### 🆕 Atualizações
+
+Para manter sua configuração atualizada:
+
+```bash
+# Método 1: Git pull (recomendado)
+cd ~/.config/nvim
+git pull origin main
+
+# Método 2: Reinstalação completa
+mv ~/.config/nvim ~/.config/nvim.backup
+git clone https://github.com/XzGuuhXz/Nvim-fusion.git ~/.config/nvim
+```
+
+**⚠️ Importante**: Sempre faça backup antes de atualizar!
+
 ---
 
 ## 📖 Índice
 
-1. [Visão Geral](#-visão-geral)
-2. [Características](#-características)
-3. [Pré-requisitos](#-pré-requisitos)
-4. [Instalação](#-instalação)
-5. [Estrutura do Projeto](#️-estrutura-do-projeto)
-6. [Configuração Principal](#️-configuração-principal)
-7. [Plugins e Funcionalidades](#-plugins-e-funcionalidades)
-8. [Atalhos de Teclado](#️-atalhos-de-teclado)
-9. [Linguagens Suportadas](#-linguagens-suportadas)
-10. [Personalização](#-personalização)
-11. [Troubleshooting](#️-troubleshooting)
-12. [Comandos Úteis](#-comandos-úteis)
-13. [Exemplos de Uso](#-exemplos-de-uso)
-14. [Configurações Avançadas](#-configurações-avançadas)
-15. [Plugins Adicionais Recomendados](#-plugins-adicionais-recomendados)
-16. [Dicas e Truques](#-dicas-e-truques)
-17. [Segurança e Backup](#-segurança-e-backup)
-18. [Monitoramento e Performance](#-monitoramento-e-performance)
-19. [Recursos Avançados](#-recursos-avançados)
-20. [Casos de Uso Específicos](#-casos-de-uso-específicos)
-21. [Referências e Recursos](#-referências-e-recursos)
-22. [Contribuindo](#-contribuindo)
+1. [Informações da Versão](#-informações-da-versão)
+2. [Visão Geral](#-visão-geral)
+3. [Características](#-características)
+4. [Pré-requisitos](#-pré-requisitos)
+5. [Instalação](#-instalação)
+6. [Estrutura do Projeto](#️-estrutura-do-projeto)
+7. [Configuração Principal](#️-configuração-principal)
+8. [Plugins e Funcionalidades](#-plugins-e-funcionalidades)
+9. [Atalhos de Teclado](#️-atalhos-de-teclado)
+10. [Linguagens Suportadas](#-linguagens-suportadas)
+11. [Personalização](#-personalização)
+12. [Troubleshooting](#️-troubleshooting)
+13. [Comandos Úteis](#-comandos-úteis)
+14. [Exemplos de Uso](#-exemplos-de-uso)
+15. [Configurações Avançadas](#-configurações-avançadas)
+16. [Plugins Adicionais Recomendados](#-plugins-adicionais-recomendados)
+17. [Dicas e Truques](#-dicas-e-truques)
+18. [Segurança e Backup](#-segurança-e-backup)
+19. [Monitoramento e Performance](#-monitoramento-e-performance)
+20. [Recursos Avançados](#-recursos-avançados)
+21. [Casos de Uso Específicos](#-casos-de-uso-específicos)
+22. [Referências e Recursos](#-referências-e-recursos)
+23. [Contribuindo](#-contribuindo)
 
 ---
 
@@ -2455,7 +2506,6 @@ vim.keymap.set("n", "<leader>mc", ":!make clean<CR>",
 - [r/neovim](https://www.reddit.com/r/neovim/) - Reddit community
 - [Neovim Discussions](https://github.com/neovim/neovim/discussions) - GitHub Discussions
 - [Neovim Discord](https://discord.gg/neovim) - Discord server
-- [Matrix Chat](https://app.element.io/#/room/#neovim:matrix.org) - Matrix room
 
 ### Configurações Inspiradoras
 
