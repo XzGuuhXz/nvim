@@ -176,7 +176,7 @@ mv ~/.local/share/nvim ~/.local/share/nvim.backup
 
 2. **Clone o repositório**:
 ```bash
-git clone https://github.com/XzGuuhXz/Nvim-fusion.git ~/.config/nvim
+git clone https://github.com/XzGuuhXz/Nvim-Fusion.git ~/.config/nvim
 ```
 
 3. **Primeira inicialização**:
