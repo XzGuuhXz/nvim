@@ -10,19 +10,28 @@ Uma configuração moderna e completa do Neovim focada em produtividade e experi
 
 ## 📖 Índice
 
-1. [Visão Geral](#visão-geral)
-2. [Características](#características)
-3. [Pré-requisitos](#pré-requisitos)
-4. [Instalação](#instalação)
-5. [Estrutura do Projeto](#estrutura-do-projeto)
-6. [Configuração Principal](#configuração-principal)
-7. [Plugins e Funcionalidades](#plugins-e-funcionalidades)
-8. [Atalhos de Teclado](#atalhos-de-teclado)
-9. [Linguagens Suportadas](#linguagens-suportadas)
-10. [Personalização](#personalização)
-11. [Troubleshooting](#troubleshooting)
-12. [Comandos Úteis](#comandos-úteis)
-13. [Contribuindo](#contribuindo)
+1. [Visão Geral](#-visão-geral)
+2. [Características](#-características)
+3. [Pré-requisitos](#-pré-requisitos)
+4. [Instalação](#-instalação)
+5. [Estrutura do Projeto](#️-estrutura-do-projeto)
+6. [Configuração Principal](#️-configuração-principal)
+7. [Plugins e Funcionalidades](#-plugins-e-funcionalidades)
+8. [Atalhos de Teclado](#️-atalhos-de-teclado)
+9. [Linguagens Suportadas](#-linguagens-suportadas)
+10. [Personalização](#-personalização)
+11. [Troubleshooting](#️-troubleshooting)
+12. [Comandos Úteis](#-comandos-úteis)
+13. [Exemplos de Uso](#-exemplos-de-uso)
+14. [Configurações Avançadas](#-configurações-avançadas)
+15. [Plugins Adicionais Recomendados](#-plugins-adicionais-recomendados)
+16. [Dicas e Truques](#-dicas-e-truques)
+17. [Segurança e Backup](#-segurança-e-backup)
+18. [Monitoramento e Performance](#-monitoramento-e-performance)
+19. [Recursos Avançados](#-recursos-avançados)
+20. [Casos de Uso Específicos](#-casos-de-uso-específicos)
+21. [Referências e Recursos](#-referências-e-recursos)
+22. [Contribuindo](#-contribuindo)
 
 ---
 
@@ -906,8 +915,6 @@ nvim  # Vai reinstalar tudo
 | `:lua vim.diagnostic.goto_next()` | Próximo diagnóstico |
 | `:lua vim.diagnostic.goto_prev()` | Diagnóstico anterior |
 | `:lua vim.diagnostic.setqflist()` | Lista de diagnósticos |
-
----
 
 ## 🧪 Exemplos de Uso
 
