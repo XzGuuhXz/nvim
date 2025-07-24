@@ -125,7 +125,7 @@ mv ~/.local/share/nvim ~/.local/share/nvim.backup
 
 2. **Clone o repositório**:
 ```bash
-git clone https://github.com/XzGuuhXz/Nvim-fusion.git ~/.config/nvim
+git clone https://github.com/XzGuuhXz/Nvim-Fusion.git ~/.config/nvim
 ```
 
 3. **Primeira inicialização**:
@@ -2455,7 +2455,6 @@ vim.keymap.set("n", "<leader>mc", ":!make clean<CR>",
 - [r/neovim](https://www.reddit.com/r/neovim/) - Reddit community
 - [Neovim Discussions](https://github.com/neovim/neovim/discussions) - GitHub Discussions
 - [Neovim Discord](https://discord.gg/neovim) - Discord server
-- [Matrix Chat](https://app.element.io/#/room/#neovim:matrix.org) - Matrix room
 
 ### Configurações Inspiradoras
 
