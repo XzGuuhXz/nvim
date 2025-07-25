@@ -2505,7 +2505,6 @@ vim.keymap.set("n", "<leader>mc", ":!make clean<CR>",
 
 - [r/neovim](https://www.reddit.com/r/neovim/) - Reddit community
 - [Neovim Discussions](https://github.com/neovim/neovim/discussions) - GitHub Discussions
-- [Neovim Discord](https://discord.gg/neovim) - Discord server
 
 ### Configurações Inspiradoras
 
