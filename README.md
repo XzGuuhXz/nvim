@@ -35,7 +35,7 @@ Uma configuração moderna e completa do Neovim focada em produtividade e experi
 
 | **Sistema** | **Status** | **Notas** |
 |-------------|------------|-----------|
-| **Linux** | ✅ Totalmente suportado | Testado em Ubuntu, Arch, Fedora |
+| **Linux** | ✅ Totalmente suportado | Testado em Debian, Ubuntu, Arch, Fedora |
 | **macOS** | ✅ Totalmente suportado | Homebrew recomendado |
 | **Windows** | ⚠️ Parcialmente suportado | WSL2 recomendado |
 | **Termux** | 🔶 Experimental | Algumas limitações |
