@@ -52,7 +52,7 @@ fc-cache -fv
 mv ~/.config/nvim ~/.config/nvim.backup
 
 # Clonar esta configuração
-git clone https://github.com/seu-usuario/nvim-config ~/.config/nvim
+git clone https://github.com/XzGuuhXz/nvim-fusion ~/.config/nvim
 
 # Iniciar Neovim (plugins serão instalados automaticamente)
 nvim
